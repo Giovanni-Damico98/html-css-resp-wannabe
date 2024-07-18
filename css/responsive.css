@@ -1,20 +1,25 @@
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 550px;
-    }
-
+.container {
+    width: 100%;
+    max-width: 1140px;
 }
 
+/* Mobile */
 @media screen and (max-width: 576px) {
-    .container {
-        max-width: 384px;
+    .row {
+        flex-wrap: wrap;
+        row-gap: 4rem;
     }
 
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 700px;
+    .row .col {
+        width: 100%;
     }
 
+    section:not(:first-child) {
+        margin-bottom: 0;
+    }
+
+    .why-us {
+        padding: 3rem 0;
+        background-color: #222;
+    }
 }
